@@ -1,6 +1,5 @@
 import HeroImage from "@/components/display/hero-image-slider";
 import ImageGenerate from "../components/forms/generate-image-input";
-// import Contact from "./chat/page";
 
 export default function Home() {
   return (
@@ -24,7 +23,6 @@ export default function Home() {
           <HeroImage />
 
           <div className="mt-40">
-          {/* <Contact /> */}
         </div>
         </div>
       </div>
