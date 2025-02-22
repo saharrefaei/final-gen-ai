@@ -32,13 +32,13 @@ export const ImageProvider = ({ children }: { children: React.ReactNode }) => {
     e.preventDefault();
     setLoading(true);
     if (!isSignedIn) {
-      toast.loading("please sign in to generate image", { position: "top-right" });
+      toast.loading("please sign in to generate image", { position: "bottom-right" });
     }
     try {
       const { _id } = await generateImageai(ImagePrompt);
       router.push("/dashboard/images");
     } catch (err) {
-      toast.error("failed to generate image", { position: "top-right" });
+      toast.error("failed to generate image", { position: "bottom-right" });
     }
   };
 
